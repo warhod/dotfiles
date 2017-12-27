@@ -1,0 +1,33 @@
+[push]
+	default = current
+[user]
+	name = Howard Lo
+	email = warhod@users.noreply.github.com
+
+[hub]
+protocol = https
+
+[alias]
+unstage = reset HEAD --
+last = log -1 HEAD
+br = branch
+co = checkout
+st = status
+ci = commit -v
+cp = cherry-pick
+rb = !git fetch origin && git rebase origin/master
+ri = rebase -i origin/master
+m = checkout master
+purr = pull --rebase origin master
+
+[color]
+ui = true
+
+[core]
+	excludesfile = /Users/howard/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
