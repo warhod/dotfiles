@@ -25,6 +25,13 @@ parse_git_branch() {
 
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
+#   Color constants
+RED="\x1B[1;31m"
+GREEN="\x1B[1;32m"
+BLUE="\x1B[1;34m"
+BLACK="\x1B[1;30m"
+NC="\x1B[0m"
+
 #   Set Paths
 #   ------------------------------------------------------------
     export PATH="$PATH:/usr/local/bin/"
@@ -222,7 +229,7 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name end
 #   6. NETWORKING
 #   ---------------------------
 
-alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
+alias myip='curl ifconfig.me'                       # myip:         Public facing IP Address
 alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
 alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
 alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
