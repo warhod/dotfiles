@@ -46,9 +46,9 @@ export PROMPT_COMMAND='history -a'
 export GOPATH=$HOME/Code/go
 
 #   GITHUB TOKEN for PGAUTH
-export GHTOKEN=40430e893fd9b9c3a6be539f30ef912c710bca7d
+export GITHUB_USERNAME=warhod
+export GITHUB_ACCESS_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-# HISTCONTROL
 # A colon-separated list of values controlling how commands are saved on the history list. 
 # If the list of values includes ignorespace, lines which begin with a space character are 
 # not saved in the history list. A value of  ignoredups causes lines matching the previous 
