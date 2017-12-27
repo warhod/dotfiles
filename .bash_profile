@@ -37,6 +37,10 @@ NC="\x1B[0m"
     export PATH="$PATH:/usr/local/bin/"
     export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:/Users/$user/Library/Python/2.7/bin:$PATH"
 
+    # Add psql to path
+    export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+
+
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
     export EDITOR=/usr/bin/vim
@@ -121,6 +125,15 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 #   -----------------------------
 alias md='macdown'
 alias aws='\aws $@'
+
+#   -----------------------------
+#   2.2 App specific Environment 
+#   -----------------------------
+
+# Loads NVM on shell
+export NVM_DIR="/Users/$user/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
 
 #   -------------------------------
 #   3. FILE AND FOLDER MANAGEMENT-
@@ -274,13 +287,6 @@ alias mountReadWrite='/sbin/mount -uw /'    # mountReadWrite:   For use when boo
 #   cleanupLS:  Clean up LaunchServices to remove duplicates in the "Open With" menu
 #   -----------------------------------------------------------------------------------
     alias cleanupLS="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-
-
-export NVM_DIR="/Users/$user/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Add psql to path
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 
 # Added by iterm integration
 test -e "${HOME}/.iterm3_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
