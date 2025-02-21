@@ -1,0 +1,161 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "resolved": "github:NixOS/nixpkgs/1128e89fd5e11bb25aedbfc287733c6502202ea9?lastModified=1739451785&narHash=sha256-3ebRdThRic9bHMuNi2IAA%2Fek9b32bsy8F5R4SvGTIog%3D"
+    },
+    "k6@latest": {
+      "last_modified": "2025-02-16T00:50:12Z",
+      "resolved": "github:NixOS/nixpkgs/1dcdd535fef84d4671129a10e7072d56dca9a4d3#k6",
+      "source": "devbox-search",
+      "version": "0.57.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/g8c92i88634yj329andj8qgyq6cjz9r3-k6-0.57.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/g8c92i88634yj329andj8qgyq6cjz9r3-k6-0.57.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9n9hjkq04p0grk9lx489riwy0ak0vp54-k6-0.57.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9n9hjkq04p0grk9lx489riwy0ak0vp54-k6-0.57.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m2rwgsjp2bjj9xhwh4i18fn6h4ypv4j1-k6-0.57.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/m2rwgsjp2bjj9xhwh4i18fn6h4ypv4j1-k6-0.57.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5nflyp4v2839lrprk3ljc2k2b7mmbdf3-k6-0.57.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5nflyp4v2839lrprk3ljc2k2b7mmbdf3-k6-0.57.0"
+        }
+      }
+    },
+    "python@3.10": {
+      "last_modified": "2025-01-19T08:16:51Z",
+      "plugin_version": "0.0.4",
+      "resolved": "github:NixOS/nixpkgs/50165c4f7eb48ce82bd063e1fb8047a0f515f8ce#python310",
+      "source": "devbox-search",
+      "version": "3.10.16",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/sqj2108kdv9iafbyhymlkn4q0n6sfkpb-python3-3.10.16",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/sqj2108kdv9iafbyhymlkn4q0n6sfkpb-python3-3.10.16"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8mqrfc5dq5ngcjc4gyhdq0a8shmqbdw1-python3-3.10.16",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/jcr77vcfqv4x6p4svhdj4vnlkiwnxzfj-python3-3.10.16-debug"
+            }
+          ],
+          "store_path": "/nix/store/8mqrfc5dq5ngcjc4gyhdq0a8shmqbdw1-python3-3.10.16"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jqx3h9jphz0ia969dsr2sfaacr28jwsw-python3-3.10.16",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jqx3h9jphz0ia969dsr2sfaacr28jwsw-python3-3.10.16"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qlpx5kvii4jk2vcscq3iz5divhzp3nwv-python3-3.10.16",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/kzphxm5g614wpl6jar28dppdksdmh1wf-python3-3.10.16-debug"
+            }
+          ],
+          "store_path": "/nix/store/qlpx5kvii4jk2vcscq3iz5divhzp3nwv-python3-3.10.16"
+        }
+      }
+    },
+    "starship@latest": {
+      "last_modified": "2025-02-07T11:26:36Z",
+      "resolved": "github:NixOS/nixpkgs/d98abf5cf5914e5e4e9d57205e3af55ca90ffc1d#starship",
+      "source": "devbox-search",
+      "version": "1.22.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3l3xlqz8nna3isq2vzsas12lvyry997v-starship-1.22.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3l3xlqz8nna3isq2vzsas12lvyry997v-starship-1.22.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4zj9hz5iyj208900hmc2d1abs65mb3ic-starship-1.22.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4zj9hz5iyj208900hmc2d1abs65mb3ic-starship-1.22.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7qivjdb3w4xj1vqnz0jr8lmpy1b9cgqq-starship-1.22.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7qivjdb3w4xj1vqnz0jr8lmpy1b9cgqq-starship-1.22.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2pdnxgx161j45i15v01qb16j7dp23zj0-starship-1.22.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2pdnxgx161j45i15v01qb16j7dp23zj0-starship-1.22.1"
+        }
+      }
+    }
+  }
+}
