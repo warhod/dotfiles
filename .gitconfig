@@ -1,33 +1,38 @@
-[push]
-	default = current
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
 [user]
 	name = Howard Lo
 	email = warhod@users.noreply.github.com
 
+[push]
+	default = current
+
 [hub]
-protocol = https
+	protocol = https
 
 [alias]
-unstage = reset HEAD --
-last = log -1 HEAD
-br = branch
-co = checkout
-st = status
-ci = commit -v
-cp = cherry-pick
-rb = !git fetch origin && git rebase origin/master
-ri = rebase -i origin/master
-m = checkout master
-purr = pull --rebase origin master
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	br = branch
+	co = checkout
+	st = status
+	ci = commit -v
+	cp = cherry-pick
+	rb = !git fetch origin && git rebase origin/main
+	ri = rebase -i origin/main
+	m = checkout main
+	purr = pull --rebase origin main
 
 [color]
-ui = true
+	ui = true
 
 [core]
 	excludesfile = /Users/howard/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	editor = nvim
+
+[init]
+	defaultBranch = main
